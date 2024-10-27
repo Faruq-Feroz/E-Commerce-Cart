@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import Search from './Search';
 import Show from './Show';
-import { FaShoppingCart } from 'react-icons/fa'; // Importing the cart icon from react-icons
+import { FaShoppingCart } from 'react-icons/fa'; 
 import UserCart from './UserCart';
-import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is imported
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
     const [courses, setCourses] = useState([
         { id: 1, name: 'Sony Bravia', price: 60000, image: 'https://i.pinimg.com/474x/06/ac/7f/06ac7fbdb73b4ca259170c65cef70db5.jpg' },
         { id: 2, name: 'Microwave Oven', price: 20000, image: 'https://i.pinimg.com/474x/40/06/f6/4006f6a2e04fa3a6ec23ef48d4c946f1.jpg' },
         { id: 3, name: 'Electric Oven', price: 30000, image: 'https://i.pinimg.com/474x/c7/a6/5d/c7a65d94f805dd069144471445573892.jpg' },
-        // Add more products here if needed
+       
     ]);
 
     const [cartCourses, setCartCourses] = useState([]);
