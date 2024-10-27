@@ -1,0 +1,175 @@
+/* Existing styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.App-header {
+  background-color: #166df0;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.App-main {
+  padding: 20px;
+}
+
+/* Search Component */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto; /* Adjusted for spacing */
+}
+
+/* Product Display */
+
+/* Cart Checkout */
+.cart {
+  background-color: #f4c5a7;
+  padding: 50px 50px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  font-size: 2rem;
+  color: #323754;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+
+.cart .total {
+  font-size: 1.4rem;
+  margin: 20px 0;
+  text-align: right;
+  color: #323754;
+}
+
+/* Card Styles */
+.card {
+  border: none; /* Remove the default border */
+  border-radius: 15px; /* Rounded corners for the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition effects */
+  padding: 10px 30px;
+  background-color: #cddaed;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.card-img-top {
+  border-top-left-radius: 15px; /* Rounded top left */
+  border-top-right-radius: 15px; /* Rounded top right */
+  height: 200px; /* Set a fixed height for images */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Larger font size for the title */
+  color: #333; /* Dark color for text */
+  margin: 10px 0; /* Spacing above and below the title */
+}
+
+.card-text {
+  font-size: 1.2rem; /* Slightly larger font for the price */
+  color: #555; /* Gray color for text */
+}
+
+.btn-success {
+  background-color: #28a745; /* Green background */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Add padding for better appearance */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.btn-success:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* No Results Styles */
+.no-results {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #ff0000; /* Red color for emphasis */
+  margin: 20px 0; /* Spacing */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card {
+      margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+}
+
+.search-cart {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.cart-icon {
+  cursor: pointer;
+  text-align: center; /* Center text within the icon */
+}
+
+/* Centering the cart icon */
+@media (max-width: 767px) {
+  .cart-icon {
+    display: flex; /* Enable flexbox layout */
+    justify-content: center; /* Center the icon horizontally */
+    margin: 0 auto; /* Center the icon using margin */
+    width: 100%; /* Ensure the icon takes full width */
+  }
+}
+
+.cart-icon img {
+  width: 30px; /* Adjust size as needed */
+  height: auto;
+  display: block; /* Block display to remove inline spacing */
+  margin: 0 auto; /* Center the image */
+}
+
+.product-card button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.product-card button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.product {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.product:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-section {
+  margin-bottom: 40px;
+}
